@@ -1,4 +1,4 @@
 <!-- insert_bottom "[data-hook='order_item_description']" -->
 <% if item.subscription %>
-  <div>Subscription: Reorder every <%= item.subscription.time_title %></div>
+  <div><%= item.subscription.time_title %> Subscription</div>
 <% end %>
