@@ -5,7 +5,7 @@
     <%= radio_button_tag "subscriptions[active]", 0, true %> One-time Purchase
   </div>
   <div>
-    <%= radio_button_tag "subscriptions[active]", 1 %> Deliver every
+    <%= radio_button_tag "subscriptions[active]", 1 %> Subscription - Reorder every:
     <%- options = @product.subscription_intervals.collect{|i| [i.name,i.id] } %>
     <%= select_tag "subscriptions[interval_id]", options_for_select(options) %>
   </div>
